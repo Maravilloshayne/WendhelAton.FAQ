@@ -1,0 +1,41 @@
+﻿@model WendhelAton.FAQ.Web.ViewModels.IndexViewModel
+@using WendhelAton.FAQ.Web.Infrastructure.Data.Models
+
+
+@{
+    Layout = "~/Views/Shared/_LogoWithWidgets.cshtml";
+}
+
+<h1 class="my-4">
+    Threads
+    <small>Wall view</small>
+</h1>
+@{
+    foreach (Thread thread in Model.Threads)
+    {
+        <!-- Logo Thread -->
+        <div class="card mb-4">
+            <img class="card-img-top" src="~/threads/@thread.Id/dipper.png" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">@thread.Title</h2>
+                <p class="card-text">@thread.Content</p>
+                <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+                Posted on @thread.UpdatedAt.ToString("dddd, dd MMMM yyyy hh:mm tt")
+            </div>
+        </div>
+    }
+}
+
+<!-- Pagination -->
+<ul class="pagination justify-content-center mb-4">
+    <li class="page-item">
+        <a class="page-link" href="#">&larr; Older</a>
+    </li>
+    <li class="page-item disabled">
+        <a class="page-link" href="#">Newer &rarr;</a>
+    </li>
+</ul>
+
+
