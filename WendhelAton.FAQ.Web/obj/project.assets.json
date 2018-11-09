@@ -2,6 +2,32 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "BCrypt-Core/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/BCrypt-Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/BCrypt-Core.dll": {}
+        }
+      },
+      "CodeKicker.BBCode-NETStandard/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CodeKicker.BBCode.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CodeKicker.BBCode.dll": {}
+        },
+        "resource": {
+          "lib/netstandard2.0/de-DE/CodeKicker.BBCode.resources.dll": {
+            "locale": "de-DE"
+          },
+          "lib/netstandard2.0/it-IT/CodeKicker.BBCode.resources.dll": {
+            "locale": "it-IT"
+          }
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -2805,6 +2831,18 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "PdfSharpCore/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp1.1/PdfSharpCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.1/PdfSharpCore.dll": {}
+        }
+      },
       "Pomelo.Data.MySql.Unofficial/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -3126,6 +3164,33 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "SixLabors.Core/1.0.0-beta0006": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/SixLabors.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/SixLabors.Core.dll": {}
+        }
+      },
+      "SixLabors.ImageSharp/1.0.0-beta0005": {
+        "type": "package",
+        "dependencies": {
+          "SixLabors.Core": "1.0.0-beta0006",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/SixLabors.ImageSharp.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -4921,6 +4986,38 @@
     }
   },
   "libraries": {
+    "BCrypt-Core/2.0.0": {
+      "sha512": "g6CJ6ixfOjyLkyuQIQn61Isb4ee+0Q0eqsNn0fHB+s5kbChNU9zETXafDD83SN+1eU/QWPSL5f2lTM0PG9mGVg==",
+      "type": "package",
+      "path": "bcrypt-core/2.0.0",
+      "files": [
+        "bcrypt-core.2.0.0.nupkg.sha512",
+        "bcrypt-core.nuspec",
+        "lib/netcoreapp2.0/BCrypt-Core.dll"
+      ]
+    },
+    "CodeKicker.BBCode-NETStandard/5.0.0": {
+      "sha512": "u0nwHo9I+jb0jmPhRolAVCy96NdWIy2/f/Oi7BkhKmx1yZnWOP+qDVEwsJqsB94Wvw3wylbzD+fB0JSUZjqn+A==",
+      "type": "package",
+      "path": "codekicker.bbcode-netstandard/5.0.0",
+      "files": [
+        ".signature.p7s",
+        "codekicker.bbcode-netstandard.5.0.0.nupkg.sha512",
+        "codekicker.bbcode-netstandard.nuspec",
+        "lib/net40/CodeKicker.BBCode.dll",
+        "lib/net40/de-DE/CodeKicker.BBCode.resources.dll",
+        "lib/net40/it-IT/CodeKicker.BBCode.resources.dll",
+        "lib/net45/CodeKicker.BBCode.dll",
+        "lib/net45/de-DE/CodeKicker.BBCode.resources.dll",
+        "lib/net45/it-IT/CodeKicker.BBCode.resources.dll",
+        "lib/net46/CodeKicker.BBCode.dll",
+        "lib/net46/de-DE/CodeKicker.BBCode.resources.dll",
+        "lib/net46/it-IT/CodeKicker.BBCode.resources.dll",
+        "lib/netstandard2.0/CodeKicker.BBCode.dll",
+        "lib/netstandard2.0/de-DE/CodeKicker.BBCode.resources.dll",
+        "lib/netstandard2.0/it-IT/CodeKicker.BBCode.resources.dll"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "rMDlyePoxggkmN/qgha1+BR2Uy+dOr38xKCQOPfVNKGY07R2nYJGMTKJFE1XFgwD70RYUNazf2fqutjJF18XgQ==",
       "type": "package",
@@ -7873,6 +7970,17 @@
         "nuget.frameworks.nuspec"
       ]
     },
+    "PdfSharpCore/1.0.4": {
+      "sha512": "yW6jny+zpGlb7k1JP6SC2vVdjRiSdqXqRTt1FDwGhPNxtKQVcPxY3ZMvoidMNVmXLriiDZPo1YAAvQYiIbKeHQ==",
+      "type": "package",
+      "path": "pdfsharpcore/1.0.4",
+      "files": [
+        ".signature.p7s",
+        "lib/netcoreapp1.1/PdfSharpCore.dll",
+        "pdfsharpcore.1.0.4.nupkg.sha512",
+        "pdfsharpcore.nuspec"
+      ]
+    },
     "Pomelo.Data.MySql.Unofficial/1.0.1": {
       "sha512": "mbI2XUSkhM1u0xVNLOgA4UsXG8bb87Ib+RORPz9VU33ip1tKRClg7hXiU5LkQIOqjCTwP3amAK8dF1hKUO95SA==",
       "type": "package",
@@ -8193,6 +8301,36 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "SixLabors.Core/1.0.0-beta0006": {
+      "sha512": "Xv2bOML08se0GWIQJVaIpVV168KQHLYQyESdk5Kv5Sgw0iuZShq6orBXY5AGRwQAyPubGXUVPj/AHK12DI+DxQ==",
+      "type": "package",
+      "path": "sixlabors.core/1.0.0-beta0006",
+      "files": [
+        "lib/netcoreapp2.0/SixLabors.Core.dll",
+        "lib/netcoreapp2.0/SixLabors.Core.xml",
+        "lib/netstandard1.1/SixLabors.Core.dll",
+        "lib/netstandard1.1/SixLabors.Core.xml",
+        "sixlabors.core.1.0.0-beta0006.nupkg.sha512",
+        "sixlabors.core.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp/1.0.0-beta0005": {
+      "sha512": "mhB3ulgr51tKuLRLC/xBgNSDv6qsAsehfwt/aj1OuKlLWu4oXUl2V6HdLKxqQftigkQthQVujI0gMLH6/o7zNg==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/1.0.0-beta0005",
+      "files": [
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.xml",
+        "lib/netstandard1.1/SixLabors.ImageSharp.dll",
+        "lib/netstandard1.1/SixLabors.ImageSharp.xml",
+        "lib/netstandard1.3/SixLabors.ImageSharp.dll",
+        "lib/netstandard1.3/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.0/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.0/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.1.0.0-beta0005.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -13021,12 +13159,16 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "BCrypt-Core >= 2.0.0",
+      "CodeKicker.BBCode-NETStandard >= 5.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.EntityFrameworkCore >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
+      "PdfSharpCore >= 1.0.4",
       "Pomelo.Data.MySql.Unofficial >= 1.0.1",
-      "Pomelo.EntityFrameworkCore.MySql >= 2.1.1"
+      "Pomelo.EntityFrameworkCore.MySql >= 2.1.1",
+      "SixLabors.ImageSharp >= 1.0.0-beta0005"
     ]
   },
   "packageFolders": {
@@ -13070,6 +13212,14 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "BCrypt-Core": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "CodeKicker.BBCode-NETStandard": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -13089,6 +13239,10 @@
             "target": "Package",
             "version": "[2.1.1, )"
           },
+          "PdfSharpCore": {
+            "target": "Package",
+            "version": "[1.0.4, )"
+          },
           "Pomelo.Data.MySql.Unofficial": {
             "target": "Package",
             "version": "[1.0.1, )"
@@ -13096,6 +13250,10 @@
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[2.1.1, )"
+          },
+          "SixLabors.ImageSharp": {
+            "target": "Package",
+            "version": "[1.0.0-beta0005, )"
           }
         },
         "imports": [

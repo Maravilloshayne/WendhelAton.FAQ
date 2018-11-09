@@ -12,6 +12,9 @@ namespace WendhelAton.FAQ.Web.Areas.Manage.ViewModels.Threads
         public string Title { get; set; }
 
         [Required]
+        public string Description { get; set; }
+
+        [Required]
         public string Content { get; set; }
 
         [Required]

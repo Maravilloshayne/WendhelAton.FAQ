@@ -12,11 +12,15 @@ namespace WendhelAton.FAQ.Web.Infrastructure.Data.Models
 
         public string Content { get; set; }
 
-        public Guid? UserId { get; set; }
+        public string Description { get; set; }
+
+        public string TemplateName { get; set; }
 
         public DateTime UpdatedAt { get; set; }
 
         public bool IsPublished { get; set; }
+
+       
 
     }
 }

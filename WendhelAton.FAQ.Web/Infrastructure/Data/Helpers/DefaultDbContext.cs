@@ -15,6 +15,8 @@ namespace WendhelAton.FAQ.Web.Infrastructure.Data.Helpers
         }
         #region Models
         public DbSet<Thread> Threads { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

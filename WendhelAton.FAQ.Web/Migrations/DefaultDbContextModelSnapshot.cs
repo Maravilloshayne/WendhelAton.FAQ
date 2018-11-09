@@ -14,7 +14,7 @@ namespace WendhelAton.FAQ.Web.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
+                .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("WendhelAton.FAQ.Web.Infrastructure.Data.Models.Thread", b =>
@@ -24,7 +24,11 @@ namespace WendhelAton.FAQ.Web.Migrations
 
                     b.Property<string>("Content");
 
+                    b.Property<string>("Description");
+
                     b.Property<bool>("IsPublished");
+
+                    b.Property<string>("TemplateName");
 
                     b.Property<DateTime>("Timestamp");
 
@@ -32,11 +36,53 @@ namespace WendhelAton.FAQ.Web.Migrations
 
                     b.Property<DateTime>("UpdatedAt");
 
+                    b.HasKey("Id");
+
+                    b.ToTable("Threads");
+                });
+
+            modelBuilder.Entity("WendhelAton.FAQ.Web.Infrastructure.Data.Models.User", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("EmailAddress");
+
+                    b.Property<string>("FirstName");
+
+                    b.Property<int>("Gender");
+
+                    b.Property<string>("LastName");
+
+                    b.Property<int>("LoginStatus");
+
+                    b.Property<int>("LoginTrials");
+
+                    b.Property<string>("Password");
+
+                    b.Property<string>("RegistrationCode");
+
+                    b.Property<DateTime>("Timestamp");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("WendhelAton.FAQ.Web.Infrastructure.Data.Models.UserRole", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Role");
+
+                    b.Property<DateTime>("Timestamp");
+
                     b.Property<Guid?>("UserId");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Threads");
+                    b.ToTable("UserRoles");
                 });
 #pragma warning restore 612, 618
         }

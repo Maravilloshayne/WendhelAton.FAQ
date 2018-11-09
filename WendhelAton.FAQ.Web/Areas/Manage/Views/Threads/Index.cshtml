@@ -6,7 +6,7 @@
     Layout = "~/Views/Shared/_PublicLayout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Manage Threads  </h2>
 
 <div class="card-container col-md-8">
     <div class="card">
@@ -15,7 +15,7 @@
                 <input id="searchKeyword" type="text" class="form-control" value="@Model.Threads.Keyword" placeholder="Search by title" aria-label="Search title" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button" onclick="searchTrigger()">Search</button>
-                </div>
+                </div>0
             </div>
         </div>
     </div>
@@ -31,16 +31,16 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <img src="~/faqs/@thread.Id/thumbnail.png" style="width:150px;height:150px;" />
+                                    <img src="~/threads/@thread.Id/dipper.png" style="width:150px;height:150px;" />
                                 </div>
                                 <div class="col-sm-9">
                                     <h4>@thread.Title</h4>
                                     <p>@thread.Content</p>
                                     <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="#" title="Upload Banner"><button class="btn-success"><i class="fas fa-image"></i></button></a></li>
-                                        <li class="list-inline-item"><a href="#" title="Upload Thumbnail"><button class="btn-success"><i class="fas fa-image"></i></button></a></li>
-                                        <li class="list-inline-item"><a href="#" title="Update Content"><button class="btn-success"><i class="fas fa-file-alt"></i></button></a></li>
-                                        <li class="list-inline-item"><a href="#" title="Update Title"><button class="btn-success"><i class="fas fa-pen-alt"></i></button></a></li>
+                                        <li class="list-inline-item"><a href="~/manage/threads/update-banner/@thread.Id" title="Upload Banner"><button class="btn-success"><i class="fas fa-image"></i></button></a></li>
+                                        <li class="list-inline-item"><a href="~/manage/threads/update-thumbnail/@thread.Id" title="Upload Thumbnail"><button class="btn-success"><i class="fas fa-image"></i></button></a></li>
+                                        <li class="list-inline-item"><a href="~/manage/threads/update-content/@thread.Id" title="Update Content"><button class="btn-success"><i class="fas fa-file-alt"></i></button></a></li>
+                                        <li class="list-inline-item"><a href="~/manage/threads/update-title/@thread.Id" title="Update Title"><button class="btn-success"><i class="fas fa-pen-alt"></i></button></a></li>
                                         @{
                                             if (thread.IsPublished)
                                             {
@@ -58,26 +58,33 @@
                 }
 
                 <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="~/manage/faqs?pageIndex=1">First</a></li>
+                    <li class="page-item"><a class="page-link" href="~/manage/threads?pageIndex=1">First</a></li>
                     @{ if (Model.Threads.PageIndex > 1)
                         {
-                            <li class="page-item"><a class="page-link" href="~/manage/faqs?pageIndex=@(Model.Threads.PageIndex - 1)">@(Model.Threads.PageIndex - 1)</a></li>
+                            <li class="page-item"><a class="page-link" href="~/manage/threads?pageIndex=@(Model.Threads.PageIndex - 1)">@(Model.Threads.PageIndex - 1)</a></li>
                         }
                     }
                     <li class="page-item"><a class="page-link active href="#">@(Model.Threads.PageIndex)</a></li>
                     @{ if ((Model.Threads.PageIndex + 1) <= Model.Threads.PageCount)
                         {
-                            <li class="page-item"><a class="page-link" href="~/manage/faqs?pageIndex=@(Model.Threads.PageIndex + 1)">@(Model.Threads.PageIndex + 1)</a></li>
+                            <li class="page-item"><a class="page-link" href="~/manage/threads?pageIndex=@(Model.Threads.PageIndex + 1)">@(Model.Threads.PageIndex + 1)</a></li>
                         }
                     }
-                    <li class="page-item"><a class="page-link" href="~/manage/faqs?pageIndex=@Model.Threads.PageCount">Last</a></li>
+                    <li class="page-item"><a class="page-link" href="~/manage/threads?pageIndex=@Model.Threads.PageCount">Last</a></li>
                 </ul>
             }
         }
     }
     }
 
+
+
+
+
 </div>
+
+
+
 
 <!--MODAL-->
 <div class="modal" tabindex="-1" role="dialog" id="modal-unpublish">
@@ -142,7 +149,7 @@
     <script>
         //////////////////////SEARCH/////////////////////////////////////////////////////////////////
         function searchTrigger() {
-            window.location = "/manage/faqs?pageIndex=1&keyword=" + $("#searchKeyword").val();
+            window.location = "/manage/threads?pageIndex=1&keyword=" + $("#searchKeyword").val();
 
         }
         $("#searchKeyword").keyup(function (event) {
@@ -159,7 +166,7 @@
         function unPublishPost(id) {
             $.ajax({
                 type: "THREAD",
-                url: "/manage/faqs/unpublish",
+                url: "/manage/threads/unpublish",
                 data: { id: id },
                 success: function (data) {
                     location.reload();
@@ -181,7 +188,7 @@
         function publishPost(id) {
             $.ajax({
                 type: "THREAD",
-                url: "/manage/faqs/publish",
+                url: "/manage/threads/publish",
                 data: { id: id },
                 success: function (data) {
                     location.reload();

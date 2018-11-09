@@ -35,3 +35,15 @@ C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\D
 C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Threads\Create.g.cshtml.cs
 C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Threads\Index.g.cshtml.cs
 C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Threads\UpdateTitle.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Threads\Thumbnail.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Threads\UpdateContent.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Manage\Views\Threads\Banner.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Views\Threads\Threads.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Verify.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\ForgotPassword.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\ChangePassword.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\UpdateProfile.g.cshtml.cs
+C:\Users\Shayne Maravillo\source\repos\WendhelAton.FAQ\WendhelAton.FAQ.Web\obj\Debug\netcoreapp2.1\Razor\Views\Account\UpdateProfileImage.g.cshtml.cs

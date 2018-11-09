@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace WendhelAton.FAQ.Web.Infrastructure.Data.Enums
 {
-    public class gender
+    public enum gender
     {
+        Male = 1,
+        Female = 0
     }
 }

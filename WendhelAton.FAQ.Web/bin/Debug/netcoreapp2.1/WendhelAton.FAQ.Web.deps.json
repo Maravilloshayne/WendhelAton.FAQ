@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "787bbb36c6935060647b7419bbafbfa167158d7c"
+    "signature": "f357a430c070063639a86b91830527e7e00c6679"
   },
   "compilationOptions": {
     "defines": [
@@ -24,18 +24,52 @@
     ".NETCoreApp,Version=v2.1": {
       "WendhelAton.FAQ.Web/1.0.0": {
         "dependencies": {
+          "BCrypt-Core": "2.0.0",
+          "CodeKicker.BBCode-NETStandard": "5.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.EntityFrameworkCore": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
+          "PdfSharpCore": "1.0.4",
           "Pomelo.Data.MySql.Unofficial": "1.0.1",
-          "Pomelo.EntityFrameworkCore.MySql": "2.1.1"
+          "Pomelo.EntityFrameworkCore.MySql": "2.1.1",
+          "SixLabors.ImageSharp": "1.0.0-beta0005"
         },
         "runtime": {
           "WendhelAton.FAQ.Web.dll": {}
         },
         "compile": {
           "WendhelAton.FAQ.Web.dll": {}
+        }
+      },
+      "BCrypt-Core/2.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/BCrypt-Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/BCrypt-Core.dll": {}
+        }
+      },
+      "CodeKicker.BBCode-NETStandard/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/CodeKicker.BBCode.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/de-DE/CodeKicker.BBCode.resources.dll": {
+            "locale": "de-DE"
+          },
+          "lib/netstandard2.0/it-IT/CodeKicker.BBCode.resources.dll": {
+            "locale": "it-IT"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/CodeKicker.BBCode.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -396,6 +430,20 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "PdfSharpCore/1.0.4": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp1.1/PdfSharpCore.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp1.1/PdfSharpCore.dll": {}
+        }
+      },
       "Pomelo.Data.MySql.Unofficial/1.0.1": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -481,6 +529,37 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0",
           "Microsoft.NETCore.Targets": "2.1.0"
+        }
+      },
+      "SixLabors.Core/1.0.0-beta0006": {
+        "dependencies": {
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/SixLabors.Core.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/SixLabors.Core.dll": {}
+        }
+      },
+      "SixLabors.ImageSharp/1.0.0-beta0005": {
+        "dependencies": {
+          "SixLabors.Core": "1.0.0-beta0006",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/SixLabors.ImageSharp.dll": {}
         }
       },
       "System.ComponentModel/4.0.1": {
@@ -3707,6 +3786,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BCrypt-Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g6CJ6ixfOjyLkyuQIQn61Isb4ee+0Q0eqsNn0fHB+s5kbChNU9zETXafDD83SN+1eU/QWPSL5f2lTM0PG9mGVg==",
+      "path": "bcrypt-core/2.0.0",
+      "hashPath": "bcrypt-core.2.0.0.nupkg.sha512"
+    },
+    "CodeKicker.BBCode-NETStandard/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u0nwHo9I+jb0jmPhRolAVCy96NdWIy2/f/Oi7BkhKmx1yZnWOP+qDVEwsJqsB94Wvw3wylbzD+fB0JSUZjqn+A==",
+      "path": "codekicker.bbcode-netstandard/5.0.0",
+      "hashPath": "codekicker.bbcode-netstandard.5.0.0.nupkg.sha512"
+    },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
       "serviceable": true,
@@ -3847,6 +3940,13 @@
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
     },
+    "PdfSharpCore/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yW6jny+zpGlb7k1JP6SC2vVdjRiSdqXqRTt1FDwGhPNxtKQVcPxY3ZMvoidMNVmXLriiDZPo1YAAvQYiIbKeHQ==",
+      "path": "pdfsharpcore/1.0.4",
+      "hashPath": "pdfsharpcore.1.0.4.nupkg.sha512"
+    },
     "Pomelo.Data.MySql.Unofficial/1.0.1": {
       "type": "package",
       "serviceable": true,
@@ -3881,6 +3981,20 @@
       "sha512": "sha512-2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
       "path": "runtime.native.system.security.cryptography/4.0.0",
       "hashPath": "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512"
+    },
+    "SixLabors.Core/1.0.0-beta0006": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xv2bOML08se0GWIQJVaIpVV168KQHLYQyESdk5Kv5Sgw0iuZShq6orBXY5AGRwQAyPubGXUVPj/AHK12DI+DxQ==",
+      "path": "sixlabors.core/1.0.0-beta0006",
+      "hashPath": "sixlabors.core.1.0.0-beta0006.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/1.0.0-beta0005": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mhB3ulgr51tKuLRLC/xBgNSDv6qsAsehfwt/aj1OuKlLWu4oXUl2V6HdLKxqQftigkQthQVujI0gMLH6/o7zNg==",
+      "path": "sixlabors.imagesharp/1.0.0-beta0005",
+      "hashPath": "sixlabors.imagesharp.1.0.0-beta0005.nupkg.sha512"
     },
     "System.ComponentModel/4.0.1": {
       "type": "package",

@@ -1,0 +1,9 @@
+﻿@model WendhelAton.FAQ.Web.ViewModels.ThreadViewModel
+@{
+    ViewData["Title"] = "Thread";
+    Layout = "~/Views/Shared/_BlogWithWidgets.cshtml";
+}
+<h2>@Model.Title</h2>
+@Html.Raw(Model.Content)
+
+
